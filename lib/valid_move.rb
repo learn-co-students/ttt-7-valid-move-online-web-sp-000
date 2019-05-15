@@ -2,10 +2,10 @@
 def valid_move?(board, index)
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
-  if (position_taken? == false && position_taken? == between?(0,8)) #something if its in scope of 0-8
-    return true
-  else
-    return false
+if(index.to_i.between?(1,9)) #if index is within available positions on board
+  if !(position_taken?(board,index)) #if our position is not taken
+    return true                       # return true for valid move
+  end
 end
 
 def position_taken?(board, index)
