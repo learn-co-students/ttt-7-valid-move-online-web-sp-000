@@ -13,5 +13,5 @@ def position_taken?(board, index)
 end
 
 def good_number(index)
-  index>=0 && index<=8
+  index.between?(0, 8)
 end
