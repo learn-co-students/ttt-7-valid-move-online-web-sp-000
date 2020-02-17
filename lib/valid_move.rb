@@ -1,4 +1,7 @@
-# code your #valid_move? method here
-
-
-# re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+def valid_move?(board, input)
+  if (input > 8 || input < 0 || board[input] == nil)
+    return false
+  elsif (board[input] == " " || board[input] == "")
+    return true
+  end
+end
