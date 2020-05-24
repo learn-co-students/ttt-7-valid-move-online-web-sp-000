@@ -10,6 +10,5 @@ end
 
 def position_taken?(board, index)
   potential_move = board[index]
-  
   (potential_move == "X" || potential_move == "O") ? true : false
 end
