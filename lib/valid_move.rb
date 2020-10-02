@@ -7,9 +7,7 @@ def position_taken?(board, input)
 end
 
 def valid_move?(board, input)
-  if input < 0 || input > 9 
-    return false
-  elsif position_taken?(board, input) == true
+  if input < 0 || input > 9 || position_taken?(board, input) == true
     return false
   else
     return true
