@@ -12,9 +12,9 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
-  if position_taken?
-    puts "Taken"
-  else index < 1 || index > 8 
-    puts "Invalid"
+#  if position_taken?
+#   return false
+  if index.between?(0,8) || position_taken?(board, index)
+    return false
   end
 end
