@@ -10,7 +10,7 @@ end
 
 
 
-#The above can also be written as a ternary operator - pushing myself further to understand more comple things IK
+#The above can also be written as a ternary operator - pushing myself further to understand more complex things and write more succinct code IK
 
 def valid_move?(board, index)
   position_taken?(board, index) == false && index.between?(0, 8) ? true : false
